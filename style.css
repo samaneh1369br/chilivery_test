@@ -1,0 +1,200 @@
+@import url("font.css");
+body,html {
+  width: 100%;
+  direction: rtl;
+  font-size: 16px;
+  margin: 0;
+}
+*{ font-family: 'Shabnam', serif;
+}
+.flex-container{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
+.sidebar {
+	/* flex-basis: 20%; */
+	width: 100%;
+	background-color: hsla(355,4%,51%,1.00);
+	display: flex;
+	position: sticky;
+	height: 10vh;
+	top: 0;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: flex-start;
+}
+
+.list-item {
+	list-style-type: none;
+	flex-direction: row;
+	display: flex;
+	/* height: 100%; */
+	font-size: 2.25rem;
+	color: rgb(230, 222, 222);
+	/* line-height: 0; */
+	/* justify-content: flex-start; */
+	/* justify-items: flex-start; */
+	flex-wrap: nowrap;
+	/* padding-top: 2rem; */
+	margin: 0;
+	width: 100%;
+	line-height:10vh;
+	/* display: flex; */
+	text-align: center;
+	justify-content: space-between;
+}
+
+.sidebar-item{
+	flex-grow: 1;
+	
+}
+
+.list-item li:first-child {
+	order: 3;
+  }
+.list-item li:nth-child(2) {
+	order: 1;
+  }
+
+.list-item li:nth-child(3) {
+	order: 2;
+  }
+  
+.list-item li:nth-child(4) {
+	order: 4;
+  }
+
+.list-item li:nth-child(5) {
+	order: 5;
+  }
+
+.logo {
+	max-width:100%;
+	align-self: center;
+	padding-left:0px !important
+}
+
+.sidebar-item-logo {
+	padding:7.5px;
+	text-align: center;
+	flex-grow: 1;
+}
+
+.content {
+	width:100%;
+	 display:flex;
+	flex-direction:column-reverse;
+	 
+}
+
+.content > div {
+	margin-top:60px;
+}
+
+
+
+
+
+.image-text-holder {
+	background-color: rgba(255,255,255,1.00);
+	/* width: calc(1/3*100% - (1 - 1/3)*10%); */
+	width: 30%;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0, 0.5);
+	margin-bottom: 30px;
+}
+
+
+
+.btn {
+	background: transparent;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	color: black;
+	font-weight: bold;
+}
+
+.btn-size-large {
+	padding: 30px 50px;
+	font-size: 1.2rem;
+	border-radius: 6px;
+}
+
+.btn-color-red {
+	background-color: #e4492e;
+	border-color: #e4492e;
+	color: white;
+}
+
+.button{
+	text-align: center;
+	justify-content: center !important;
+
+}
+
+p {
+	width: 100%;
+	text-align:justify;
+	font-size:1.125rem;
+	margin: 15px 0;
+}
+
+.max-width {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.image-holder {
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+
+.text-holder {
+	border: 15px solid transparent;
+	box-sizing: border-box;
+}
+.section-flex{
+	/* background-color: aquamarine; */
+	margin: 30px auto;
+	width: 1500px;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: space-between;
+}
+
+.header{
+	background-image: url("http://hajiramezan-web.ir/responsive-pizza-serious/image/background-image-1(2).jpg");
+	height:70vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	font-size: 2.5rem;
+	color: aliceblue;
+	width: 100%;
+	margin-top: 0;
+	justify-content: center;
+	order:1;
+	font-weight: bold;
+}
+
+.paragraph{
+	font-weight: 300;
+	justify-content: center;
+	
+}
+
+a{
+	font-weight: bold;
+	text-decoration: none;
+	color:rgb(241, 229, 229);
+}
+.footer{
+	width: 100%;
+	height: 40vh;
+	background-color: hsla(355,4%,40%,1.00);
+	margin-bottom: 0;
+	
+}
